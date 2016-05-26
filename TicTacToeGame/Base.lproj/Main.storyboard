@@ -17,6 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="P" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myq-GW-nsp">
+                                <rect key="frame" x="266" y="192" width="69" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="QGI-Hs-TaO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="MsE-Xf-lq6">
                                 <rect key="frame" x="191" y="28" width="218" height="132"/>
                                 <subviews>
@@ -110,15 +119,6 @@
                                     </mask>
                                 </variation>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="P" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myq-GW-nsp">
-                                <rect key="frame" x="266" y="192" width="69" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="QGI-Hs-TaO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -157,16 +157,30 @@
                         <outlet property="buttonThree" destination="9oE-Is-kcH" id="CnK-Dm-hrv"/>
                         <outlet property="buttonTwo" destination="dTZ-G7-qz9" id="uvQ-fy-37B"/>
                         <outlet property="whichPlayerLabel" destination="myq-GW-nsp" id="gKg-ha-Q8i"/>
-                        <outlet property="winningCombo1" destination="9oE-Is-kcH" id="WHl-SO-JU7"/>
-                        <outletCollection property="buttons" destination="Yw4-Ys-mIG" id="L3Y-Jt-ioi"/>
-                        <outletCollection property="buttons" destination="dTZ-G7-qz9" id="BSM-Kv-mgR"/>
-                        <outletCollection property="buttons" destination="9oE-Is-kcH" id="LOl-oL-uMM"/>
-                        <outletCollection property="buttons" destination="QEA-Tu-JZN" id="Ebm-TS-vTn"/>
-                        <outletCollection property="buttons" destination="3vr-4G-eX5" id="596-BK-dYV"/>
-                        <outletCollection property="buttons" destination="S7h-4S-Sbz" id="dx2-8z-JVE"/>
-                        <outletCollection property="buttons" destination="XsD-eR-G4o" id="zwu-hc-g8A"/>
-                        <outletCollection property="buttons" destination="6qj-Z8-2tu" id="y9U-qh-aLj"/>
-                        <outletCollection property="buttons" destination="14b-7b-asG" id="vIE-k9-2pX"/>
+                        <outletCollection property="winningCombo1" destination="Yw4-Ys-mIG" id="LnE-4g-hn8"/>
+                        <outletCollection property="winningCombo1" destination="dTZ-G7-qz9" id="UAw-ML-cpa"/>
+                        <outletCollection property="winningCombo1" destination="9oE-Is-kcH" id="VyZ-6P-bCU"/>
+                        <outletCollection property="winningCombo2" destination="QEA-Tu-JZN" id="wd0-Uv-5TY"/>
+                        <outletCollection property="winningCombo2" destination="3vr-4G-eX5" id="Iqt-kc-3J2"/>
+                        <outletCollection property="winningCombo2" destination="S7h-4S-Sbz" id="gqB-0I-AAa"/>
+                        <outletCollection property="winningCombo3" destination="XsD-eR-G4o" id="Yj2-Qd-ORW"/>
+                        <outletCollection property="winningCombo3" destination="6qj-Z8-2tu" id="kZu-1X-oZX"/>
+                        <outletCollection property="winningCombo3" destination="14b-7b-asG" id="7tW-4g-bJy"/>
+                        <outletCollection property="winningCombo4" destination="Yw4-Ys-mIG" id="pBy-FT-sCZ"/>
+                        <outletCollection property="winningCombo4" destination="QEA-Tu-JZN" id="Dgj-zY-Ht6"/>
+                        <outletCollection property="winningCombo4" destination="XsD-eR-G4o" id="BlX-FQ-7af"/>
+                        <outletCollection property="winningCombo5" destination="dTZ-G7-qz9" id="oII-pw-vio"/>
+                        <outletCollection property="winningCombo5" destination="3vr-4G-eX5" id="FtV-57-Ks8"/>
+                        <outletCollection property="winningCombo5" destination="6qj-Z8-2tu" id="FFn-0f-tV5"/>
+                        <outletCollection property="winningCombo6" destination="9oE-Is-kcH" id="lUp-m2-6kF"/>
+                        <outletCollection property="winningCombo6" destination="S7h-4S-Sbz" id="Ktw-li-ara"/>
+                        <outletCollection property="winningCombo6" destination="14b-7b-asG" id="haT-OD-5vM"/>
+                        <outletCollection property="winningCombo7" destination="Yw4-Ys-mIG" id="BM8-rk-DcF"/>
+                        <outletCollection property="winningCombo7" destination="3vr-4G-eX5" id="aap-g7-88J"/>
+                        <outletCollection property="winningCombo7" destination="14b-7b-asG" id="4S9-Va-Wm7"/>
+                        <outletCollection property="winningCombo8" destination="XsD-eR-G4o" id="UQ0-eg-KiA"/>
+                        <outletCollection property="winningCombo8" destination="3vr-4G-eX5" id="s4P-zL-Lzd"/>
+                        <outletCollection property="winningCombo8" destination="9oE-Is-kcH" id="9sv-dk-NkJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
