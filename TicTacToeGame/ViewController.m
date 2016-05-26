@@ -19,6 +19,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonEight;
 @property (weak, nonatomic) IBOutlet UIButton *buttonNine;
 @property (weak, nonatomic) IBOutlet UILabel *whichPlayerLabel;
+@property NSString *whoWon;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *buttons;
+
+
 
 @end
 
@@ -37,29 +41,34 @@
 }
 
 - (IBAction)onButtonTapped:(UIButton *)button {
-
+    
     // assigns label state to button
     // & changes label state
     // & disables button
     
-    [button  setEnabled:NO];
+    [button setEnabled:NO];
+    
     [button setTitle:self.whichPlayerLabel.text forState:UIControlStateDisabled];
+
+    if ([self.whichPlayerLabel.text.lowercaseString isEqualToString:@"x"]) {
+        [button setTitleColor:[UIColor blueColor] forState:UIControlStateDisabled];
+    } else  {
+        [button setTitleColor:[UIColor redColor] forState:UIControlStateDisabled];
+        
+    }
+    
+    
     if ([self.whichPlayerLabel.text.lowercaseString isEqualToString:@"x"]) {
         self.whichPlayerLabel.text = @"O";
     } else {
         self.whichPlayerLabel.text = @"X";
     }
     
-    if ([[button currentTitle].lowercaseString isEqualToString:@"x"]) {
-        button.tintColor = [UIColor blueColor];
-    } else {
-        button.tintColor = [UIColor redColor];
-    }
     
     
     
     
-
+    
 }
 
 @end
