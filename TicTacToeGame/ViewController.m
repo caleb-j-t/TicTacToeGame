@@ -29,8 +29,6 @@
     
     self.whichPlayerLabel.text = @"X";
     
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,6 +41,20 @@
     // assigns label state to button
     // & changes label state
     // & disables button
+    
+    [button  setEnabled:NO];
+    [button setTitle:self.whichPlayerLabel.text forState:UIControlStateDisabled];
+    if ([self.whichPlayerLabel.text.lowercaseString isEqualToString:@"x"]) {
+        self.whichPlayerLabel.text = @"O";
+    } else {
+        self.whichPlayerLabel.text = @"X";
+    }
+    
+    if ([[button currentTitle].lowercaseString isEqualToString:@"x"]) {
+        button.tintColor = [UIColor blueColor];
+    } else {
+        button.tintColor = [UIColor redColor];
+    }
     
     
     
